@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\HomeworkApril26.Data\HomeworkApril26.Data.csproj" />
+		<PackageReference Include="jQuery" Version="3.4.1" />
+  </ItemGroup>
+
+</Project>

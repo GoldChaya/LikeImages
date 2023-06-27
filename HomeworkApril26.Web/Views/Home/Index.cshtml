@@ -1,0 +1,13 @@
+﻿@using HomeworkApril26.Data
+@model HomePageViewModel;
+
+@foreach (Image i in Model.Images)
+{
+    <div class="bg-light p-4 rounded shadow mb-3" style="margin-bottom: 20px; text-align: center;">
+        <a href="/home/viewimage?id=@i.Id">
+            <h3>@i.ImageName</h3>
+            <h5>Uploaded at: @i.DateUploaded</h5>
+            <img style="width: 400px;" src="/uploads/@i.ImagePath">
+        </a>
+    </div>
+}
